@@ -220,9 +220,3 @@ public class Main
  * You can also customize how much time is available to the AI players.  By default, each computer has 500ms to
  * think.  You can use the -time switch to change this.  Use the --help switch to learn more about the options
  * available to you.
- * 
- * @section grading_sec Grading
- * 
- * // TODO: This!
- * 
- */
