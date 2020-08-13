@@ -63,6 +63,7 @@ public class PerfectAI extends AIModule
 
 	}
 
+	// Gets the best move from the given game states
 	private State getMax(final GameStateModule game, State CurrentState, int depthLimit, int ourID, int theirID, boolean firstMove)
 	{
 		if(game.isGameOver())
@@ -105,6 +106,7 @@ public class PerfectAI extends AIModule
         	return MinState;
 	}
 
+	// Gets the ideal move the other player would make and chooses the best outcome for the AI
 	private State getMin(final GameStateModule game, State CurrentState, int depthLimit, int ourID, int theirID)
 	{
 
@@ -147,7 +149,8 @@ public class PerfectAI extends AIModule
 		}
 		return s1;
 	}
-
+	
+// Evaluates each game board and assigns it a numerical value representing the strength 
 private State eval(final GameStateModule state, State CurrentState, int usId, int themId)
 {
 
